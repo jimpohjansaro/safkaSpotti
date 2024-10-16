@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SafkaSpotti</title>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="src/style.css">
+    <!-- <script type="module" src="/src/components/map.ts"></script> -->
+    <script type="module" src="src/dark-theme.ts"></script>
+    <script type="module" src="/src/main.ts"></script>
+  </head>
+<body>
+  <header>
+    <div class="logo"></div>
+    <h1>SafkaSpotti</h1>
+    <div class="themeToggle">
+      <img src="./src/img/lm.png" id="icon">
+    </div>
+  </header>
+    <main>
+      <!-- Menu modalit -->
+      <dialog id="dailyMenu">
+        <div class="menuContainer">
+          <button class="modalCloseBtn">X</button>
+          <h2>Tämän päivän menu</h2>
+          <h3 id="dailyH3"></h3>
+          <div class="modalFoodData" id="dailyFoodData"></div>
+        </div>
+      </dialog>
+      <dialog id="weeklyMenu">
+        <div class="menuContainer">
+          <button class="modalCloseBtn">X</button>
+          <h2>Tämän viikon menu</h2>
+          <div id="weeklyContainer"></div>
+        </div>
+      </dialog>
+        <div id="map"></div>
+        <aside>
+          <div class="asideOtsikko">
+            <h2>Pikavalinnat</h2>
+          </div>
+          <div class="sortOptionsContainer">
+            <ul class="sortOptions">
+              <li><button class="sortBtn" value="Espoo">Espoo</button></li>
+              <li><button class="sortBtn" value="Helsinki">Helsinki</button></li>
+              <li><button class="sortBtn" value="Vantaa">Vantaa</button></li>
+              <li><button class="sortBtn" value="Turku">Turku</button></li>
+              <li><button class="sortBtn" value="Tampere">Tampere</button></li>
+              <li><button class="sortBtn" value="Kaikki">Kaikki</button></li>
+            </ul>
+          </div>
+        </aside>
+    </main>
+    <footer>
+      <p>© Jim Pohjansaro</p>
+    </footer>
+</body>
+</html>
+
